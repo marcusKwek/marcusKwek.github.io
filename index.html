@@ -9,24 +9,42 @@
   <style>
     .row {
       display: flex;
-      gap: 20px; /* automatically adds margin between columns */
+      gap: 20px; /* space between columns */
     }
-    .column {
-      flex: 1; /* makes columns equal width */
+    .col-1 {
+      flex: 1; /* smaller */
+      background: lightcoral;
       padding: 20px;
-      background-color: Silver;
+    }
+    .col-2 {
+      flex: 2; /* twice as wide as col-1 */
+      background: lightblue;
+      padding: 20px;
+    }
+    .col-3 {
+      flex: 2; /* twice as wide as col-1 */
+      /* width: 200px; fixed width */
+      background: lightgreen;
+      padding: 20px;
     }
   </style>
 </head>
 <body style="background-color: DarkSlateGray;">
   <div class="row">
-    <div class="column">
+    <div class="col-1">
       <H1>Marcus Kwek</H1>
-      <p>test: 3</p>
+      <p>test: 4</p>
     </div>
     
-    <div class="column">
+    <div class="col-2">
     
+      <a href="https://example.com" target="_blank">
+        <div class="image-container">
+          <img src="image.jpg" alt="Clickable image">
+          <div class="overlay">Go to Website</div>
+        </div>
+      </a>
+
       <a href="https://example.com" target="_blank">
         <div class="image-container">
           <img src="image.jpg" alt="Clickable image">
@@ -36,8 +54,22 @@
       
     </div>
     
-    <div class="column">
-      <a href="project.html">link</a>  
+    <div class="col-2">
+      <a href="https://example.com" target="_blank">
+        <div class="image-container">
+          <img src="image.jpg" alt="Clickable image">
+          <div class="overlay">Go to Website</div>
+        </div>
+      </a>
+
+      <a href="https://example.com" target="_blank">
+        <div class="image-container">
+          <img src="image.jpg" alt="Clickable image">
+          <div class="overlay">Go to Website</div>
+        </div>
+      </a>
+
+      
     </div>
   </div>
 </body>
