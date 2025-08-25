@@ -6,20 +6,39 @@
   <title>Marcus Kwek</title>
   <link rel="stylesheet" href="style.css">
   
-  <style></style>
-
+  <style>
+    .row {
+      display: flex;
+      gap: 20px; /* automatically adds margin between columns */
+    }
+    .column {
+      flex: 1; /* makes columns equal width */
+      padding: 20px;
+      background-color: Silver;
+    }
+  </style>
 </head>
-
 <body style="background-color: DarkSlateGray;">
-
-  <a href="project.html" target="_blank">
-    <div class="image-container">
-      <img src="image.jpg" alt="Clickable image">
-      <div class="overlay">Go to Website</div>
+  <div class="row">
+    <div class="column">
+      <H1>Marcus Kwek</H1>
+      <p>test: 2</p>
     </div>
-  </a>
-  
+    
+    <div class="column">
+    
+      <a href="https://example.com" target="_blank">
+        <div class="image-container">
+          <img src="image.jpg" alt="Clickable image">
+          <div class="overlay">Go to Website</div>
+        </div>
+      </a>
+      
+    </div>
+    
+    <div class="column">
+      <a href="project.html">link</a>  
+    </div>
+  </div>
 </body>
 </html>
-
-
