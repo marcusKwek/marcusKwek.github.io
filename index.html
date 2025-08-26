@@ -13,12 +13,6 @@
       height: auto;
     }
     
-    .row {
-      display: flex;
-      gap: 20px; /* space between columns */
-    }
-
-    
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -40,7 +34,7 @@
     /* Responsive rule */
     @media (max-width: 400px) {
       .container {
-        grid-template-columns: 1fr 1fr; /* Column 1 stays independent, 2+3 merge */
+        grid-template-columns: 1fr 2fr; /* Column 1 stays independent, 2+3 merge */
       }
 
       .col:nth-child(1) {
@@ -56,10 +50,10 @@
 
 </head>
 <body style="background-color: DarkSlateGray;">
-  <div class="row">
+  <div class="container">
     <div class="col" style="text-align: center;">
       <H1>Marcus Kwek</H1>
-      <p>test: 12</p>
+      <p>test: 13</p>
     </div>
     
     <div class="col">
