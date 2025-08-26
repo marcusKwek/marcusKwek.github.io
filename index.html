@@ -5,43 +5,64 @@
   <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
   <title>Marcus Kwek</title>
   <link rel="stylesheet" href="style.css">
-  
+
+
   <style>
     img {
       width: 100%;
       height: auto;
     }
+    
     .row {
       display: flex;
       gap: 20px; /* space between columns */
     }
-    .col-1 {
-      flex: 1; /* smaller */
-      background: lightcoral;
-      padding: 20px;
-      min-width: 100px;
+
+    
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
-    .col-2 {
-      flex: 2; /* twice as wide as col-1 */
-      background: lightblue;
-      padding: 20px;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      padding: 10px;
     }
-    .col-3 {
-      flex: 2; /* twice as wide as col-1 */
-      /* width: 200px; fixed width */
-      background: lightgreen;
+
+    .col {
       padding: 20px;
+      background: lightgray;
+      border: 1px solid #ccc;
+    }
+
+    /* Responsive rule */
+    @media (max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr 2fr; /* Column 1 stays independent, 2+3 merge */
+      }
+
+      .col:nth-child(1) {
+        grid-column: 1; /* stays in first column */
+      }
+
+      .col:nth-child(2),
+      .col:nth-child(3) {
+        grid-column: 2; /* both occupy second column */
+      }
     }
   </style>
+
 </head>
 <body style="background-color: DarkSlateGray;">
   <div class="row">
-    <div class="col-1" style="text-align: center;">
+    <div class="col" style="text-align: center;">
       <H1>Marcus Kwek</H1>
       <p>test: 9</p>
     </div>
     
-    <div class="col-2">
+    <div class="col">
     
       <a href="https://example.com" target="_blank">
         <div class="image-container">
@@ -59,7 +80,7 @@
       
     </div>
     
-    <div class="col-2">
+    <div class="col">
       <a href="https://example.com" target="_blank">
         <div class="image-container">
           <img src="image.jpg" alt="Clickable image">
