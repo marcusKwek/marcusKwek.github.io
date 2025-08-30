@@ -18,6 +18,14 @@
       transition: transform 0.4s ease;
 }
 
+H1 {
+color: grey;
+}
+
+p {
+color: grey;
+}
+
 
 a {
 color: grey;
@@ -26,7 +34,7 @@ text-decoration: none; /* Removes default underline */
 
 /* Color when hovering over the link */
 a:hover {
-color: black; /* New color on hover */
+color: white; /* New color on hover */
 text-decoration: none; /* Adds underline on hover */
 }
 
