@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+  <title>Marcus Kwek</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    img {
+      width: 100%;
+      height: auto;
+    }
+    
+    body {
+      margin: 0;
+      font-family: lato, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 1px;
+      padding: 1px;
+    }
+
+    .col {
+      padding: 1px;
+      background: DarkSlateGray;
+    }
+    
+  </style>
+
+</head>
+<body style="background-color: DarkSlateGray;">
+  <div class="container">
+    <div class="col" style="text-align: center;">
+      <H1>Marcus Kwek</H1>
+      <p>test: 24</p>
+      <a href="index.html">Home</a>
+      <br>
+      <a href="project.html">Resume</a>
+      <br>
+      <br>
+      <a href="project_armmouse.html">Arm Mounted Mouse</a>
+      <br>
+      <a href="project.html">Project 2</a>
+      <br>
+      <a href="project.html">Project 3</a>
+      <br>
+      <a href="project.html">Project 4</a>
+    </div>
+    
+    <div class="col">
+          <br>
+          <H1>Bias Detection</H1>
+          <br>
+          <img src="biasdetectionPic1.jpg" alt=" ">
+          <br>
+    </div>
+    
+  </div>
+</body>
+</html>
