@@ -30,6 +30,7 @@ color: grey;
 a {
 color: grey;
 text-decoration: none; /* Removes default underline */
+font-size: 40px
 }
 
 /* Color when hovering over the link */
