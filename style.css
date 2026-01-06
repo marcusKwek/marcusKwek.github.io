@@ -30,13 +30,19 @@ color: grey;
 a {
 color: grey;
 text-decoration: none; /* Removes default underline */
-font-size: 40px
 }
 
 /* Color when hovering over the link */
 a:hover {
 color: white; /* New color on hover */
 text-decoration: none; /* Adds underline on hover */
+}
+
+.link-large {
+font-size: 24px; /* Makes the text significantly larger */
+}
+.link-small {
+font-size: 12px; /* Makes the text smaller */
 }
 
 .overlay {
