@@ -20,26 +20,22 @@
 
 H1 {
 color: F7F7F7;
-font-family: "Times New Roman", Georgia, serif;
 }
 
 p {
 color: F7F7F7;
-font-family: "Times New Roman", Georgia, serif;
 }
 
 
 a {
 color: F7F7F7;
 text-decoration: none; /* Removes default underline */
-font-family: "Times New Roman", Georgia, serif;
 }
 
 /* Color when hovering over the link */
 a:hover {
 color: white; /* New color on hover */
 text-decoration: none; /* Adds underline on hover */
-font-family: "Times New Roman", Georgia, serif;
 }
 
 .link-large {
